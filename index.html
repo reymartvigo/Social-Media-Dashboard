@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Social Media Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="icon" href="image/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src='script.js' defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+
+</head>
+
+<body>
+
+    <header id="head">
+        <div class="title" id="header-div">
+            <h1 id="title-head">Social Media Dashboard</h1>
+            <p id="text">Total Followers:23,004</p>
+        </div>
+
+        <hr>
+
+        <div class="toggle-container">
+            <p id="text">Dark Mode</p>
+
+            <aside class="toggle" id="toggle-mode">
+                <button id="dark"></button>
+                <button id="light"></button>
+            </aside>
+        </div>
+
+    </header>
+
+
+    <main>
+        <section class="social-cards">
+            <section class="facebook-card">
+                <div class="fb-content" id="card">
+                    <p class="fb" id="name"><img src="image/icon-facebook.svg" alt="" aria-hidden="true">&nbsp; @nathanf
+                    </p>
+                    <div class="fb-followers" id="followers">
+                        <h2 id="title-head">1987</h2>
+                        <p id="text">FOLLOWERS</p>
+                    </div>
+                    <p class="fb-today" id="today"><img src="image/icon-up.svg" alt="" aria-hidden="true">&nbsp; 12
+                        Today</p>
+                </div>
+            </section>
+
+
+            <section class="twitter-card">
+                <div class="twitter-content" id="card">
+                    <p class="twit" id="name"><img src="image/icon-twitter.svg" alt="" aria-hidden="true">&nbsp;
+                        @nathanf</p>
+                    <div class="twit-followers" id="followers">
+                        <h2 id="title-head">1044</h2>
+                        <p id="text">FOLLOWERS</p>
+                    </div>
+                    <p class="twit-today" id="today"><img src="image/icon-up.svg" alt="" aria-hidden="true">&nbsp; 99
+                        Today</p>
+                </div>
+            </section>
+
+
+            <section class="instagram-card">
+                <div class="instagram-content" id="card">
+                    <p class="insta" id="name"><img src="image/icon-instagram.svg" alt="" aria-hidden="true">&nbsp;
+                        @realnathanf</p>
+                    <div class="insta-followers" id="followers">
+                        <h2 id="title-head">11k</h2>
+                        <p id="text">FOLLOWERS</p>
+                    </div>
+                    <p class="insta-today" id="today"><img src="image/icon-up.svg" alt="" aria-hidden="true">&nbsp; 1099
+                        Today</p>
+                </div>
+            </section>
+
+
+            <section class="youtube-card">
+                <div class="youtube-content" id="card">
+                    <p class="yt" id="name"><img src="image/icon-youtube.svg" alt="" aria-hidden="true">&nbsp;
+                        Nathan F.</p>
+                    <div class="insta-followers" id="followers">
+                        <h2 id="title-head">8239</h2>
+                        <p id="text">SUBSCRIBERS</p>
+                    </div>
+                    <p class="yt-today" id="today"><img src="image/icon-down.svg" alt="" aria-hidden="true">&nbsp; 144
+                        Today</p>
+                </div>
+            </section>
+
+        </section>
+
+
+        <section class="overview-cards">
+            <h2 id="title-head" class="title">Overview - Today</h2>
+
+            <section class="page-view" id="overview">
+                <div class="page-view-content">
+                    <p id="text">Page Views <img src="image/icon-facebook.svg" alt="" aria-hidden="true"></p>
+
+                    <div class="pagev-value">
+                        <h2 id="title-head">87</h2>
+                        <p class="pagev"><img src="image/icon-up.svg"> 3%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="likes-view" id="overview">
+                <div class="likes-view-content">
+                    <p id="text">Likes <img src="image/icon-facebook.svg" alt="" aria-hidden="true"></p>
+
+                    <div class="like-value">
+                        <h2 id="title-head">52</h2>
+                        <p class="like"><img src="image/icon-down.svg"> 2%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="likes-view-insta" id="overview">
+                <div class="likes-view-content-insta">
+                    <p id="text">Likes <img src="image/icon-instagram.svg" alt="" aria-hidden="true"></p>
+
+                    <div class="like-value-insta">
+                        <h2 id="title-head">5462</h2>
+                        <p class="like-insta"><img src="image/icon-up.svg"> 2257%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="profile-view-insta" id="overview" id="overview">
+                <div class="profile-view-content-insta">
+                    <p id="text">Profile Views <img src="image/icon-instagram.svg" alt="" aria-hidden="true"></p>
+
+                    <div class="profile-value-insta">
+                        <h2 id="title-head">52k</h2>
+                        <p class="profilev-insta"><img src="image/icon-up.svg"> 1375%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="retweet-view" id="overview">
+                <div class="retweets-view-content">
+                    <p id="text">Retweets <img src="image/icon-twitter.svg" alt="" aria-hidden="true"></p>
+
+                    <div class="retweets-value">
+                        <h2 id="title-head">117</h2>
+                        <p class="retweets"><img src="image/icon-up.svg"> 303%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="likes-view-twit" id="overview">
+                <div class="like-view-content-twit">
+                    <p id="text">Likes<img src="image/icon-twitter.svg" alt="" aria-hidden="true"></p>
+
+                    <div class="likes-twits-value">
+                        <h2 id="title-head">507</h2>
+                        <p class="likes-twits"><img src="image/icon-up.svg"> 553%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="likes-view-yt" id="overview">
+                <div class="likes-view-yt-content">
+                    <p id="text">Likes <img src="image/icon-youtube.svg" alt="" aria-hidden="true"></p>
+
+                    <div class="likes-yt-value">
+                        <h2 id="title-head">107</h2>
+                        <p class="likes-yt"><img src="image/icon-down.svg"> 19%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="total-view-yt" id="overview">
+                <div class="total-view-yt-content">
+                    <p id="text">Total Views <img src="image/icon-youtube.svg" alt="" aria-hidden="true"></p>
+
+                    <div class="total-yt-value">
+                        <h2 id="title-head">1407</h2>
+                        <p class="total-yt"><img src="image/icon-down.svg"> 12%</p>
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+
+
+
+    </main>
+</body>
+
+</html>

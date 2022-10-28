@@ -1,0 +1,127 @@
+@use "variable";
+
+header {
+  background: variable.$vdbluetop;
+  width: 100%;
+  padding: 2rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+
+  .title {
+    background: transparent;
+    line-height: 2rem;
+    width: 100%;
+
+    h1 {
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      font-weight: 700;
+      color: variable.$darktext;
+    }
+  }
+
+  hr {
+    border-color: hsl(227, 19%, 52%);
+  }
+
+  .toggle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: variable.$darktext;
+    }
+
+    .toggle {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 2px 4px;
+      background: linear-gradient(
+        to right,
+        variable.$toggledark1,
+        variable.$toggledark2
+      );
+      border-radius: 5rem;
+      width: 3.25rem;
+
+      button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 100%;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      #light {
+        display: none;
+      }
+
+      #dark {
+        background-color: variable.$darkcardbg;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 4rem 4rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    padding: 4rem 4rem 5rem;
+    flex-direction: row;
+    border-radius: unset;
+
+    hr {
+      display: none;
+    }
+
+    .toggle-container {
+      width: 12rem;
+
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    background: variable.$vdbluetop;
+    width: 100%;
+    padding: 5rem 10rem 10rem;
+
+    .title {
+      line-height: 2.5rem;
+      width: 100%;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .toggle-container {
+      p {
+        font-size: 1rem;
+      }
+
+      .toggle {
+        width: 3.5rem;
+      }
+    }
+  }
+}
